@@ -3,7 +3,7 @@
 A web app that displays random physics formulas and explanations at the click of a button! Built with a serverless AWS architecture and a responsive front-end using HTML, CSS, and JavaScript. 
 
 ## Live Demo
-Have a go yourself! [Click here :)]([https://your-live-website-link.com](https://your-live-website-link.com)
+Have a go yourself! [Click here :](https://your-live-website-link.com)
 
 ## Features
 - Fetches random physics formulas from DynamoDB using an AWS Lambda function.
