@@ -9,7 +9,7 @@ Have a go yourself! [Click here](http://physics-formula-webpage.s3-website.eu-no
 - Fetches random physics formulas from DynamoDB using an AWS Lambda function.
 - Responsive front-end design suitable for desktop and mobile.
 - Website is hosted on Amazon S3, with fast API calls to AWS Lambda via API Gateway.
-- Easy to extend by addding new formulas to the DynamoDB.
+- Easy to extend by adding new formulas to the DynamoDB.
 
 ## Technologies Used
 - **Front-end:** HTML, CSS, JavaScript
