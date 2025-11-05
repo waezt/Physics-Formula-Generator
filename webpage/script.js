@@ -1,3 +1,4 @@
+// Fetch button event handler
 document.getElementById("fetchBtn").addEventListener("click", async () => {
     const formulaElement = document.getElementById("formula");
     const explanationElement = document.getElementById("explanation");
@@ -6,6 +7,7 @@ document.getElementById("fetchBtn").addEventListener("click", async () => {
     explanationElement.textContent = "";
 
     try {
+        // Fetch formula from API
         const response = await fetch("https://42rafeurq7.execute-api.eu-north-1.amazonaws.com/prod/get-formula");
 
         if (!response.ok) throw new Error("HTTP error " + response.status);
@@ -16,6 +18,7 @@ document.getElementById("fetchBtn").addEventListener("click", async () => {
         explanationElement.textContent = data.explanation || "";
 
     } catch (error) {
+        // Handle error if fetch fails
         console.error("Error fetching formula:", error);
         formulaElement.textContent = "Error loading formula.";
         explanationElement.textContent = "";
