@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+body {
+background-color: #000000;
+color: #222;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.container {
+text-align: center;
+background: rgb(9, 7, 7, 0.9);
+padding: 40px;
+border-radius: 0;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+max-width: 400px;
+width: 90%;
+}
+
+
+#formula-box {
+background-color: #171819;
+border-radius: 12px;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #8b8989; 
+}
+
+#formula {
+font-weight: 600;
+font-size: 1.1rem;
+color: #ababab;
+}
+
+#explanation {
+margin-top: 10px;
+color: #bbbbbb;
+font-size: 0.95rem;
+}
+
+button {
+background-color: #5b5e68;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 10px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.2s;
+}
+
+button:hover {
+background-color: #404040;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; 
+}
+
+#video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 440px) {
+  html {
+    font-size: 70%;
+  }
+
+  
+  section#video-background video {
+    display: none;
+  }
+
+  section#video-background {
+    background-image: url(./bgimage1.png);
+    background-size: 500%;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;                
+    z-index: -1;
+  }
+
+
+  .container {
+    padding: 25px;
+    max-width: 95%;
+    margin: 50px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+ }
+}
